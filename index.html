@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="noholoa Sci-art, music, poetry, and constructed languages.">
+  <title>noholoa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">noholoa</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" role="navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="sci-art.html" class="nav-link">Sci-Art</a>
+        <a href="creative.html" class="nav-link">Creative</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="decorative-line left"></div>
+      <div class="decorative-line right"></div>
+      
+      <div class="hero-content">
+        <p class="hero-greeting">Glad you’re here. Have a look around.</p>
+        <h1 class="hero-name"><span class="accent">noholoa</span></h1>
+        <p class="hero-tagline">Exploring the intersection of science and art, with more to come.</p>
+        <div class="hero-cta">
+          <a href="sci-art.html" class="btn btn-primary">Explore Sci-Art</a>
+          <a href="creative.html" class="btn btn-outline">Music & Poetry</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="main-content">
+      <div class="content-section">
+        <h2 class="section-title">What I Do</h2>
+        <p>I try to build quiet little wonders. Creations across visual form, text, and sound.</p>
+      </div>
+
+      <!-- Pursuits Grid -->
+      <div class="content-section">
+        <div class="projects-grid">
+          
+          <article class="project-card animate-in">
+            <h3 class="project-title">Sci-Art</h3>
+            <p class="project-description">Visual pieces at the intersection of art and science.</p>
+            <div class="project-tags">
+              <span class="tag">Science</span>
+              <span class="tag">Art</span>
+              <span class="tag">Visual</span>
+            </div>
+            <p style="margin-top: var(--space-sm);"><a href="sci-art.html">View sci-art</a></p>
+          </article>
+
+          <article class="project-card animate-in">
+            <h3 class="project-title">Music</h3>
+            <p class="project-description">Original compositions and sonic explorations.</p>
+            <div class="project-tags">
+              <span class="tag">Audio</span>
+              <span class="tag">Composition</span>
+            </div>
+            <p style="margin-top: var(--space-sm);"><a href="creative.html">Listen</a></p>
+          </article>
+
+          <article class="project-card animate-in">
+            <h3 class="project-title">Poetry</h3>
+            <p class="project-description">Small works of art about big feelings and odd truths - written eons ago (pre-AI) - that play with meaning.</p>
+            <div class="project-tags">
+              <span class="tag">Human Writing</span>
+              <span class="tag">Human Poetry</span>
+            </div>
+            <p style="margin-top: var(--space-sm);"><a href="creative.html">Read</a></p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Connect -->
+      <div class="content-section" style="text-align: center;">
+        <h2 class="section-title" style="display: block; text-align: center;">Connect</h2>
+        <p style="max-width: 600px; margin: 0 auto var(--space-md);">Find me on Mastodon for updates on sci-art and more, or message me on Telegram for a quick DM.</p>
+        <a href="https://mastodon.social/@noholoa" class="btn btn-outline" target="_blank" rel="noopener">Follow on Mastodon</a>
+        <a href="https://t.me/noholoa" class="btn btn-outline" target="_blank" rel="noopener">Chat on Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/alexwindell" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://mastodon.social/@noholoa" class="social-link" aria-label="Mastodon" target="_blank" rel="me">M</a>
+        <a href="https://www.pinterest.com/noholoa/" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">P</a>
+        <a href="https://soundcloud.com/noholoa" class="social-link" aria-label="SoundCloud" target="_blank" rel="noopener">SC</a>
+      </div>
+      <p class="copyright">&copy; 2025 noholoa</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Music and poetry by noholoa: creative work in sound and language.">
+  <title>Creative | noholoa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">noholoa</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" role="navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="sci-art.html" class="nav-link">Sci-Art</a>
+        <a href="creative.html" class="nav-link active">Creative</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="page-header">
+      <h1 class="page-title">Creative</h1>
+      <p class="page-subtitle">Music and poetry</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="content-section">
+      <p style="text-align: center; max-width: 700px; margin: 0 auto;">Beyond visual work, I create in sound and written language, exploring rhythm, tone, meaning, and expression through music and lyrics.</p>
+    </section>
+
+    <!-- Music Section -->
+    <section class="content-section">
+      <h2 class="section-title">Music</h2>
+      
+      <div class="project-card animate-in">
+        <h3 class="project-title">Original Compositions</h3>
+        <p class="project-description">Sonic explorations and original pieces. Listen to my music on SoundCloud.</p>
+        <div class="project-tags">
+          <span class="tag">Audio</span>
+          <span class="tag">Composition</span>
+          <span class="tag">Sound</span>
+        </div>
+        <p style="margin-top: var(--space-md);">
+          <a href="https://soundcloud.com/noholoa" class="btn btn-primary" target="_blank" rel="noopener">Listen on SoundCloud</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Poetry Section -->
+    <section class="content-section">
+      <h2 class="section-title">Poetry</h2>
+      
+      <div class="project-card animate-in">
+        <h3 class="project-title">Written Works</h3>
+        <p class="project-description">Poetry written many years ago (pre-AI), exploring language, meaning, desire, and timeless ideas. Read my work on DeviantArt.</p>
+        <div class="project-tags">
+          <span class="tag">Writing</span>
+          <span class="tag">Poetry</span>
+          <span class="tag">Language</span>
+        </div>
+        <p style="margin-top: var(--space-md);">
+          <a href="https://www.deviantart.com/noholoa" class="btn btn-primary" target="_blank" rel="noopener">Read on DeviantArt</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Connection Between Forms -->
+    <section class="content-section">
+      <h2 class="section-title">The Connection</h2>
+      
+      <div class="card animate-in">
+        <h3 class="card-title">Sound and Language</h3>
+        <p>My music and poetry share deep roots of rhythm, pacing, the weight of silence, the arc of tension and release. Working in both forms teaches each to inform the other.</p>
+      </div>
+
+      <div class="card animate-in">
+        <h3 class="card-title">Expression Beyond Logic</h3>
+        <p>While sci-art engages with analytical thinking, my music and poetry access different parts of myself: emotional resonance, my intuition, the impressions of my life that are uniquely human.</p>
+      </div>
+    </section>
+
+    <!-- Other Creative Work -->
+    <section class="content-section" style="text-align: center;">
+      <h2 class="section-title" style="display: block; text-align: center;">More to Explore</h2>
+      <p style="max-width: 600px; margin: 0 auto var(--space-md);">See my visual work where science and art intersect.</p>
+      <a href="sci-art.html" class="btn btn-outline">View Sci-Art</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/alexwindell" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://mastodon.social/@noholoa" class="social-link" aria-label="Mastodon" target="_blank" rel="me">M</a>
+        <a href="https://www.pinterest.com/noholoa/" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">P</a>
+        <a href="https://soundcloud.com/noholoa" class="social-link" aria-label="SoundCloud" target="_blank" rel="noopener">SC</a>
+      </div>
+      <p class="copyright">&copy; 2025 noholoa</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
