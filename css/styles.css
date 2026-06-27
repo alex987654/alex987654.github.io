@@ -512,6 +512,17 @@ a:hover {
   overflow: hidden;
 }
 
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--color-accent);
+  transition: height var(--transition-smooth);
+}
+
 .project-card::after {
   content: '';
   position: absolute;
@@ -525,8 +536,11 @@ a:hover {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateX(5px);
+}
+
+.project-card:hover::before {
+  height: 100%;
 }
 
 .project-card:hover::after {
