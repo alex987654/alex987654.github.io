@@ -523,28 +523,12 @@ a:hover {
   transition: height var(--transition-smooth);
 }
 
-.project-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(247, 193, 158, 0.1) 0%, transparent 70%);
-  transform: translate(50%, -50%);
-  transition: transform var(--transition-smooth);
-}
-
 .project-card:hover {
   transform: translateX(5px);
 }
 
 .project-card:hover::before {
   height: 100%;
-}
-
-.project-card:hover::after {
-  transform: translate(30%, -30%);
 }
 
 .project-title {
