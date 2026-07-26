@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="72%">
+      <stop offset="0%" stop-color="#0c1136"/>
+      <stop offset="60%" stop-color="#090d2b"/>
+      <stop offset="100%" stop-color="#060919"/>
+    </radialGradient>
+    <radialGradient id="nebula" cx="68%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#57307a" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#2a1b4e" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="22%" stop-color="#cdd9ff" stop-opacity="0.42"/>
+      <stop offset="52%" stop-color="#6d7ce0" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#3c3f8f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0%"  stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#dfe8ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurBig" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <filter id="blurSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="blurCore" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- nebula tint, applied twice at antipodal positions to preserve point symmetry -->
+  <rect width="1024" height="1024" fill="url(#nebula)"/>
+  <rect width="1024" height="1024" fill="url(#nebula)" transform="rotate(180 512 512)"/>
+
+  <g transform="translate(512 512)">
+    <!-- ambient halo -->
+    <circle r="275" fill="url(#halo)"/>
+
+    <!-- glowing flare layer -->
+    <g filter="url(#blurBig)" opacity="0.85">
+      <path d="M 0 -400 Q 30 -30 230 0 Q 30 30 0 400 Q -30 30 -230 0 Q -30 -30 0 -400 Z" fill="#dfe9ff"/>
+      <path d="M 0 -175 Q 13 -13 175 0 Q 13 13 0 175 Q -13 13 -175 0 Q -13 -13 0 -175 Z" fill="#dfe9ff" transform="rotate(45)" opacity="0.8"/>
+    </g>
+
+    <!-- crisp spikes -->
+    <g filter="url(#blurSoft)">
+      <path d="M 0 -400 Q 30 -30 230 0 Q 30 30 0 400 Q -30 30 -230 0 Q -30 -30 0 -400 Z" fill="#ffffff"/>
+      <path d="M 0 -175 Q 13 -13 175 0 Q 13 13 0 175 Q -13 13 -175 0 Q -13 -13 0 -175 Z" fill="#ffffff" transform="rotate(45)"/>
+    </g>
+
+    <!-- blown-out core -->
+    <circle r="85" fill="url(#core)"/>
+    <circle r="40" fill="#ffffff" filter="url(#blurCore)"/>
+    <circle r="26" fill="#ffffff"/>
+  </g>
+</svg>

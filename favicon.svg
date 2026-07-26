@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Noholoa">
+  <title>Noholoa</title>
+  <!-- Favicon-tuned derivative of images/noholoa-starrynight.svg.
+       The star is scaled up and its spikes thickened so the mark survives a 16px tab;
+       glow is built from gradients rather than feGaussianBlur, which rasterises more
+       predictably at small sizes. Edit the master for large/social use, this for icons. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="72%">
+      <stop offset="0%" stop-color="#0c1136"/>
+      <stop offset="60%" stop-color="#090d2b"/>
+      <stop offset="100%" stop-color="#060919"/>
+    </radialGradient>
+    <radialGradient id="nebula" cx="68%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#57307a" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#2a1b4e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.50"/>
+      <stop offset="22%" stop-color="#cdd9ff" stop-opacity="0.30"/>
+      <stop offset="52%" stop-color="#6d7ce0" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#3c3f8f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flare">
+      <stop offset="0%" stop-color="#dfe9ff" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#aebcf5" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#3c3f8f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#dfe8ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="64" height="64" fill="url(#bg)"/>
+
+  <!-- nebula tint, applied twice at antipodal positions to preserve point symmetry -->
+  <rect width="64" height="64" fill="url(#nebula)"/>
+  <rect width="64" height="64" fill="url(#nebula)" transform="rotate(180 32 32)"/>
+
+  <g transform="translate(32 32)">
+    <circle r="27" fill="url(#flare)"/>
+    <circle r="15" fill="url(#halo)"/>
+
+    <path d="M 0 -29 Q 2.6 -2.6 18 0 Q 2.6 2.6 0 29 Q -2.6 2.6 -18 0 Q -2.6 -2.6 0 -29 Z"
+          fill="#ffffff"/>
+    <path d="M 0 -13 Q 1.4 -1.4 13 0 Q 1.4 1.4 0 13 Q -1.4 1.4 -13 0 Q -1.4 -1.4 0 -13 Z"
+          fill="#ffffff" opacity="0.85" transform="rotate(45)"/>
+
+    <circle r="2" fill="#ffffff"/>
+  </g>
+</svg>

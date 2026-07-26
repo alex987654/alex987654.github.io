@@ -1,0 +1,16 @@
+{
+  "name": "Noholoa",
+  "short_name": "Noholoa",
+  "description": "Sci-art, music, poetry, relaxing sounds, celestial signs, and constructed languages.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#272b46",
+  "theme_color": "#272b46",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
