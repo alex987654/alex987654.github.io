@@ -114,9 +114,10 @@ body::before {
   gap: 0.55rem;
 }
 
+/* sized to the wordmark's ink height (~17.6px at 1.5rem DM Sans) */
 .site-logo-mark {
-  width: 32px;
-  height: 32px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   display: block;
   border-radius: 50%;
@@ -799,11 +800,6 @@ a:hover {
 
   .header-container {
     flex-wrap: wrap;
-  }
-
-  .site-logo-mark {
-    width: 28px;
-    height: 28px;
   }
 
   .nav-toggle {

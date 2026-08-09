@@ -30,8 +30,12 @@
     <filter id="blurCore" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="5"/>
     </filter>
+    <clipPath id="circleClip">
+      <circle cx="512" cy="512" r="512"/>
+    </clipPath>
   </defs>
 
+  <g clip-path="url(#circleClip)">
   <rect width="1024" height="1024" fill="url(#bg)"/>
 
   <!-- nebula tint, applied twice at antipodal positions to preserve point symmetry -->
@@ -58,5 +62,6 @@
     <circle r="85" fill="url(#core)"/>
     <circle r="40" fill="#ffffff" filter="url(#blurCore)"/>
     <circle r="26" fill="#ffffff"/>
+  </g>
   </g>
 </svg>
