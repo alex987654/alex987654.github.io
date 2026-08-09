@@ -109,10 +109,25 @@ body::before {
   color: var(--color-header-text);
   text-decoration: none;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.site-logo-mark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 50%;
+}
+
+/* underline tracks the wordmark only, not the mark beside it */
+.site-logo-text {
   position: relative;
 }
 
-.site-logo::after {
+.site-logo-text::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -123,7 +138,7 @@ body::before {
   transition: width var(--transition-smooth);
 }
 
-.site-logo:hover::after {
+.site-logo:hover .site-logo-text::after {
   width: 100%;
 }
 
@@ -784,6 +799,11 @@ a:hover {
 
   .header-container {
     flex-wrap: wrap;
+  }
+
+  .site-logo-mark {
+    width: 28px;
+    height: 28px;
   }
 
   .nav-toggle {
