@@ -756,6 +756,24 @@ a:hover {
 }
 
 /* ============================================
+   Footnote
+   ============================================ */
+.footnote-ref {
+  line-height: 0;
+}
+
+.footnote {
+  font-size: calc(var(--size-body-base) * 0.8);
+  opacity: 0.7;
+  transition: opacity var(--transition-smooth);
+  scroll-margin-top: 40vh;
+}
+
+.footnote:target {
+  opacity: 1;
+}
+
+/* ============================================
    Animations
    ============================================ */
 @keyframes fadeInUp {
