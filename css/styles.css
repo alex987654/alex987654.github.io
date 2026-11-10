@@ -323,6 +323,10 @@ a:hover {
   color: var(--color-accent);
 }
 
+.hero-star::before {
+  content: "\2726"; /* U+2726 four-pointed star, drawn by CSS so the h1 DOM text is exactly "Noholoa" */
+}
+
 .hero-tagline {
   font-size: calc(var(--size-body-base) * 1.3);
   opacity: 0.85;

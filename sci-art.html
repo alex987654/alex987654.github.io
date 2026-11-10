@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sci-Art by Noholoa: visual work at the intersection of science and art.">
+  <meta name="author" content="Noholoa">
   <title>Sci-Art | Noholoa</title>
   <link rel="stylesheet" href="css/styles.css">
 
@@ -25,16 +26,80 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The Noholoa wordmark beside a glowing four-pointed star on a dark night sky">
+  <meta property="article:published_time" content="2026-01-21T23:01:23-08:00">
+  <meta property="article:modified_time" content="2026-11-09T21:51:52-08:00">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sci-Art | Noholoa">
   <meta name="twitter:description" content="Sci-Art by Noholoa: visual work at the intersection of science and art.">
   <meta name="twitter:image" content="https://www.noholoa.com/images/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.noholoa.com/sci-art.html",
+        "url": "https://www.noholoa.com/sci-art.html",
+        "name": "Sci-Art | Noholoa",
+        "description": "Sci-Art by Noholoa: visual work at the intersection of science and art.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://www.noholoa.com/#website"
+        },
+        "author": {
+          "@id": "https://www.noholoa.com/about.html#person"
+        },
+        "datePublished": "2026-01-21T23:01:23-08:00",
+        "dateModified": "2026-11-09T21:51:52-08:00",
+        "hasPart": [
+          {
+            "@type": "Collection",
+            "@id": "https://www.noholoa.com/sci-art.html#lunar",
+            "name": "Art on the Moon",
+            "url": "https://www.noholoa.com/sci-art.html#lunar",
+            "description": "An archive of private, celestially themed artwork curated by Noholoa and carried to the lunar surface in 2024 aboard Intuitive Machines' Odysseus lander on the IM-1 mission, written to nanofiche.",
+            "creator": {
+              "@id": "https://www.noholoa.com/about.html#person"
+            }
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://www.noholoa.com/sci-art.html#cosmic-web",
+            "name": "3D-Printed Cosmic Web",
+            "url": "https://www.noholoa.com/sci-art.html#cosmic-web",
+            "description": "A 3D-printed model of the cosmic web, photographed through the light caustics it casts.",
+            "artMedium": "3D print",
+            "creator": {
+              "@id": "https://www.noholoa.com/about.html#person"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.noholoa.com/#website",
+        "name": "Noholoa",
+        "url": "https://www.noholoa.com/",
+        "publisher": {
+          "@id": "https://www.noholoa.com/about.html#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.noholoa.com/about.html#person",
+        "name": "Noholoa",
+        "url": "https://www.noholoa.com/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="header-container">
-      <a href="index.html" class="site-logo">
+      <a href="/" class="site-logo">
         <img class="site-logo-mark" src="images/noholoa-mark-18.png" srcset="images/noholoa-mark-36.png 2x, images/noholoa-mark-54.png 3x" alt="" width="18" height="18">
         <span class="site-logo-text">Noholoa</span>
       </a>
@@ -44,7 +109,7 @@
         <span></span>
       </button>
       <nav class="main-nav" role="navigation">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="/" class="nav-link">Home</a>
         <a href="projects.html" class="nav-link">Projects</a>
         <a href="sci-art.html" class="nav-link active">Sci-Art</a>
         <a href="creative.html" class="nav-link">Creative</a>
@@ -70,7 +135,7 @@
       <h2 class="section-title">Gallery</h2>
       <div class="card animate-in">
         <h3 class="card-title">View My Sci-Art Collection</h3>
-        <p>Browse my visual work exploring themes from physics, astronomy, and language. You'll find sample glyphs of a constructed pictographic language for readers under the night sky or those in deep space, you'll also find photos of light caustics of a 3D print of the cosmic web.</p>
+        <p>Browse my visual work exploring themes from physics, astronomy, and language. You'll find sample glyphs of a <a href="conlang.html">constructed pictographic language</a> for readers under the night sky or those in deep space, you'll also find photos of light caustics of a <a href="#cosmic-web">3D print of the cosmic web</a>.</p>
         <p style="margin-top: var(--space-sm);">
           <a href="https://www.pinterest.com/noholoa/" class="btn btn-primary" target="_blank" rel="noopener">View on Pinterest</a>
         </p>
